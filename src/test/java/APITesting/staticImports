@@ -1,0 +1,31 @@
+import io.restassured.RestAssured.*;
+import io.restassured.matcher.RestAssuredMatchers.*;
+import org.hamcrest.Matchers.*;
+
+
+GET request
+https://reqres.in/api/users?page=2
+
+POST request
+https://reqres.in/api/users
+
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+
+
+PUT request(Update)
+https://reqres.in/api/users/2
+
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+
+
+DELETE request
+https://reqres.in/api/users/2--- 2 is userid
+https://reqres.in/api/users/userid
+
+
